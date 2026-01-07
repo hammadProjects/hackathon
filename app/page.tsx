@@ -1,4 +1,4 @@
-
+import Discover from "@/components/Discover";
 import Header from "@/components/header";
 import HeroSection from "@/components/heroSection";
 import { NavBar } from "@/components/navbar";
@@ -10,6 +10,7 @@ export default function Home() {
         <Header />
         <NavBar />
         <HeroSection />
+        <Discover />
       </div>
     </>
   );

@@ -68,14 +68,14 @@ export function NavBar() {
             ENTREPEDIA
           </Link>
         </h1>
-        <NavigationMenuList className="flex-wrap justify-center bg-gradient-to-t from-black to-gray-600 rounded-4xl mt-3">
+        <NavigationMenuList className="flex-wrap justify-center bg-gradient-to-t from-black to-gray-600 rounded-4xl mt-3 pl-2 pr-2">
           <NavigationMenuItem>
             <NavigationMenuLink asChild className="bg-none">
               <Link href="/">Home</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <NavigationMenuItem className="bg-none">
-            <NavigationMenuTrigger className="bg-none">
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="bg-">
               Components
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -93,7 +93,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem className="hidden md:block">
-            <NavigationMenuTrigger>List</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-">List</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[300px] gap-4">
                 <li>
@@ -126,7 +126,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem className="hidden md:block">
-            <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-">Simple</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
@@ -144,7 +144,7 @@ export function NavBar() {
             </NavigationMenuContent>
           </NavigationMenuItem>
           <NavigationMenuItem className="hidden md:block">
-            <NavigationMenuTrigger>With Icon</NavigationMenuTrigger>
+            <NavigationMenuTrigger className="bg-">With Icon</NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className="grid w-[200px] gap-4">
                 <li>
@@ -176,7 +176,7 @@ export function NavBar() {
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
-        <Button>Sign in</Button>
+        <Button className="bg-gradient-to-t from-black to-gray-600">Sign in</Button>
       </NavigationMenu>
     </>
   );

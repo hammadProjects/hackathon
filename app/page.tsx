@@ -1,3 +1,9 @@
+import Discover from "@/components/Discover";
+
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Discover />
+    </div>
+  );
 }

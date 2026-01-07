@@ -5,8 +5,7 @@ import Image from "next/image";
 
 export default function Discover() {
   return (
-    // <div className="text-center">
-    <div className="text-center py-20">
+    <div className="bg-white rounded-4xl text-center py-20">
       <div className="space-y-6">
         <Badge className="bg-[#DA2B35]">Discover Master Library</Badge>
         <h1 className="text-3xl md:text-5xl font-bold leading-14">

@@ -1,11 +1,14 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CirclePlay, MoveLeft } from "lucide-react";
+import { ArrowRight, ChevronRight, CirclePlay, MoveLeft } from "lucide-react";
 import Image from "next/image";
+import BrandsMarquee from "./BrandsMarquee";
+import ResourcesMarquee from "./ResourceMarquee";
 
 export default function Discover() {
   return (
     <div className="bg-white rounded-4xl text-center py-20">
+      <BrandsMarquee />
       <div className="space-y-6">
         <Badge className="bg-[#DA2B35]">Discover Master Library</Badge>
         <h1 className="text-3xl md:text-5xl font-bold leading-14">
@@ -103,13 +106,17 @@ export default function Discover() {
           <br />
           <span className="text-[#DA2B35]">use the resources</span>
         </h1>
-        <Button className="hover:bg-[#e7222b] rounded-full bg-[#DA2B35] py-8 px-8 font-bold text-2xl">
-          <span className="w-10 h-10">
-            <MoveLeft />
+        <Button className="mx-auto group hover:bg-[#e7222b] rounded-full bg-[#DA2B35] py-8 px-8 font-bold text-2xl flex items-center gap-3">
+          <span className="bg-black rounded-full flex items-center justify-center w-10 h-10">
+            <ArrowRight
+              size={30}
+              className="transition-transform duration-300 group-hover:rotate-90"
+            />
           </span>
           Explore Master Library
         </Button>
       </div>
+      <ResourcesMarquee />
     </div>
   );
 }

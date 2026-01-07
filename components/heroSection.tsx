@@ -14,9 +14,11 @@ export default function HeroSection() {
           to Grow your Business
         </h1>
         <p className="text-gray-400">
-          You can instantly have your own ebooks, courses, and more to sell or <br/>
+          You can instantly have your own ebooks, courses, and more to sell or{" "}
+          <br />
           plug into your offers. Without high investments or months of creation.
         </p>
+        {/* <BooksMarque /> */}
         <div className="flex gap-3">
           <p className="text-white flex gap-1"><Check className="bg-red-500 rounded-full text-white"/>Pre-Made Products</p>
           <p className="text-white flex gap-1"><Check className="bg-red-500 rounded-full text-white"/>Fully Custom Creation</p>
